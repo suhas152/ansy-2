@@ -30,7 +30,7 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           context: ./STUDENTAPI-SPRINGBOOT
-          file: ./STUDENTAPI-SPRINGBOOTd/backend.Dockerfile
+          file: ./STUDENTAPI-SPRINGBOOT/backend.Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_USER }}/ansi-backend:latest
 
