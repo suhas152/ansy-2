@@ -39,6 +39,6 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           context: ./STUDENTAPI-REACT
-          file: ./STUDENTAPI-SPRINGBOOT/frontend.Dockerfile
+          file: ./STUDENTAPI-REACT/frontend.Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_USER }}/ansi-frontend:latest
